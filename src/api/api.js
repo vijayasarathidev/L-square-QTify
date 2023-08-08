@@ -10,15 +10,6 @@ export const getUId = () => {
   return id;
 };
 
-export const faqData = async () => {
-  try {
-      let res = await axios.get(`${BackEndPoint}faq`);
-      return res.data;
-  } catch (e) {
-      console.log(`error from AxiosData Component ->`, e);
-      return null;
-  }
-};
 
 export const fetchTopAlbum = async () => {
   try {

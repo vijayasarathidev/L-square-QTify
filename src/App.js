@@ -8,8 +8,9 @@ import {
   fetchSongs,
 } from "./api/api";
 import { StyledEngineProvider } from "@mui/material/styles";
-import Faqs from "./Components/Faqs/Faqs";
-
+//import Faqs from "./Components/Faqs/Faqs";
+import MusicPlayer from "./Components/Musicplayer/Musicplayer";
+import FAQAccordion from "./Components/FaqAccordian/FaqAccordian";
 function App() {
   return (
     <>
@@ -38,8 +39,9 @@ function App() {
             border: "none",
           }}
         />
-        <Faqs/>
       </StyledEngineProvider>
+      <FAQAccordion/>
+      <MusicPlayer/>
     </>
   );
 }
